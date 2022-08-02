@@ -1,0 +1,189 @@
+/*import the font used*/
+@import url('https://fonts.googlesapis.com/css?family=couurgette|open+sans:400,800&display=swap');
+/*basic reset*/
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*custom property*/
+:root{
+    --dark-color:#b69a9a;
+    --purple-solid:#350a4f;
+    --purple-transparent:rgba(53,10,79,.7);
+    --purple-transparent-alt:rgba(10, 72, 79, 0.798);
+    --puple-light:#8f50fb;
+    --yellow-solid:#fa9e2c;
+    --gradient-color:linear-gradient(to right, var(--yellow-solid) ,var(--puple-light));
+    --gradient-color-alt:linear-gradient(to right, var(--purple-light) ,var(--yellow-solid));
+
+}
+
+ /* *{  
+    margin: 0;
+    padding:0;
+    box-sizing: border-box; */
+
+/* } */
+.container{
+    max-width:100%;
+    margin: auto;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+ul{
+    list-style: none;
+}
+.form{
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 500px;
+    background: whitesmoke;
+    padding: 60px 0;
+    text-align: center;
+    margin-left: 60%;
+}
+input{
+    width: 60%;
+    font-size: 20px;
+    margin: 5px 0;
+    border: none;
+    margin-right: 10px;
+}
+.form.logo{
+    width: 0.5px;
+    height: 0.5px;
+        margin-left:500px;
+        margin-top:-100px; 
+}
+form div{
+    margin-right: 15px;
+    
+}
+form a{
+    padding: 10px 20px;
+    background-color: rgb(143, 112, 71);
+    border: 1px solid rgb(196, 164, 122);
+    margin-right: 15px;
+    font-size: 20px;
+    color: #a09892;
+    margin-top:70%;
+}
+    .footer{
+ background: rgba(10, 72, 79, 0.798);
+ color:whitesmoke; 
+padding: 50px 0;
+    }
+ .footer-col{ 
+        width: 25%;
+        padding: 2px; 
+        font-size: 20px;
+        
+    }
+    .footer-col h4{
+        font-size: 25px;
+        color: white;
+        text-transform: capitalize;
+        margin-bottom: 35px;
+        font-weight: 500;
+        position: relative;
+    }
+    .footer-col h4::before{
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: -10px;
+        background-color: #fa9e2c;
+        height: 2px;
+        box-sizing: border-box;
+        width: 50px;
+    }
+    .footer-col ul li:not(:last-child){
+       margin-bottom: 10px;
+    }
+    .footer-col ul li a{
+        font-size: 16px;
+        text-transform: capitalize;
+        color: #ffffff;
+        text-decoration: none;
+        font-weight: 300;
+        color: #bbbbbb;
+         display: block;
+        transition: all 0.3s ease;
+        text-align: top;
+    }
+    .footer-col ul li a:hover{
+        color: #f20810ea;
+        padding-left: 10px;
+    }
+    .footer-col .social-links a{
+        display: inline-block;
+        height: 40px;
+        width: 40px;
+        background: rgb(255,255, 255,0.2);
+        margin:  0 10px 10px 0;
+        text-align: center;
+        line-height: 40px;
+        border-radius: 50%;
+        color: #ffffff;
+        transition: all 0.5s ease;
+
+    }
+    .footer-col .social-links a:hover{
+        color: #f30808;
+        background: #484352;
+    }
+    .form{
+        text-align: right;
+    }
+    /*responsive*/
+    @media(max-width: 767px){
+        .footer-col{
+            width: 50%;
+            margin-bottom: 30px;
+
+        }
+    }
+    @media(max-width:574px){
+        .footer-col{
+            width: 100%;  
+        }
+        .cont{
+            font-size: 20px;
+            font-family: times new roman;
+            text-decoration: none;
+            margin-left: 50px;
+        }
+        ul{
+            padding: 5px;
+        }
+        .last{
+            height: 90px;
+            width: 100%;
+            background-color: grey;
+            border-radius: 10px;
+            text-decoration: none;
+        }
+        .desi{
+            font-size: 30px;
+            font-family: initial;
+            margin-right: 15%;
+            padding: 5px;
+            text-align: center;
+        }
+        .footer-col table tr td a{
+            font-size: 16px;
+            text-transform: capitalize;
+            color: #ffffff;
+            text-decoration: none;
+            font-weight: 300;
+            color: #bbbbbb;
+             display: block;
+            transition: all 0.3s ease;
+            text-align: top;
+        }}
